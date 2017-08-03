@@ -27,10 +27,11 @@
 
         //create band
         $band = new BandModel('MyBand', 'rock');
-        $band->addMusician($musician1);
-        $band->addMusician($musician2);
-        $band->addMusician($musician3);
-        $band->addMusician($musician4);
+
+        $musician1->assingToBand($band);
+        $musician2->assingToBand($band);
+        $musician3->assingToBand($band);
+        $musician4->assingToBand($band);
 
         $nameBand       = $band->getName();
         $genreBand      = $band->getGenre();

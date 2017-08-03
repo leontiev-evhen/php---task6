@@ -29,7 +29,7 @@ class MusicianModel implements iMusician
     
     public function assingToBand (iBand $nameBand)
     {
-        return $nameBand->getName();
+        return $nameBand->addMusician($this);
     }
     
     public function getMusicianType ()
